@@ -18,21 +18,27 @@ The letters dataset was divided into **5 different experiments**, each using a u
 
 1. **Experiment 1 – Grouping Similar Letters**  
    - Similar letters grouped together, dissimilar letters separate.
+   - **Number of groups:** 8
 
 2. **Experiment 2 – Distributing Dissimilar Letters**  
    - Dissimilar letters distributed into compatible groups.
+   - **Number of groups:** 6
 
 3. **Experiment 3 – Separating Highly Similar Letters (Final Selected Experiment)**  
    - Highly similar letters grouped (e.g., س & ش, ص & ض).  
-   - **Train Accuracy:** 87.39%  
-   - **Test Accuracy:** 87.64%  
+   - **CNN-based model trained using From Scratch and pretrained model called MobileNetV2**.  
+   - **11 groups** were used for training.  
+   - **Train Accuracy:** 91.27%  
+   - **Test Accuracy:** 91.74%  
    - ✅ Selected as the final dataset for the mobile application.
 
 4. **Experiment 4 – Letter Position-Based Groups**  
    - Groups based on letter positions in words (Start, Middle, End, Isolated).
+   - **Number of groups:** 28
 
 5. **Experiment 5 – Separate Classes for Each Letter Form**  
    - Each letter form treated as a separate class.
+   - **Number of groups:** 28
 
 ---
 
@@ -48,3 +54,4 @@ The letters dataset was divided into **5 different experiments**, each using a u
 
 - The final dataset from **Experiment 3** was used to train AI models integrated into the DARBAK mobile application.
 - This dataset supports AI-based handwriting recognition and interactive learning for Arabic language education.
+- **CNN + MobileNetV2** architecture was used to achieve high accuracy in recognizing handwritten letters.
